@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript">
+
+        function changeImage(imgnodeIndex){
+
+            var getParent = document.getElementById("hearts");
+            getParent.childNodes[imgnodeIndex].src="javascript.jpg"
+        }
+        </script>   
+    </head>
+    <body>
+        <a href = "http://www.umich.edu">hhh</a>
+        <a href = "http://wikipedia.org">Go To Wikipedia!</a>
+        <button onclick="changeImage(5)">Change 3rd heart</button>
+
+        <h1>
+           Practical2-Q1
+        </h1>
+    
+        <!--the space infront of the img tag is considered a text node-->
+        <span id="hearts">
+            <img src="heart.jpg">
+            <img src="heart.jpg">
+            <img src="heart.jpg">
+        </span>
+        
+        <ol>		
+            <li>Vegetables</li>	
+            <li>Fruit
+               <ul>				
+                  <li>Blueberries</li>
+              <li>Bananas</li>
+               </ul>
+            </li>
+        </ol>
+
+        <table>
+            <tr><th>Name</th><th>Age</th><th>Team</th></tr>
+            <tr><td>Colleen</td><td>26</td><td>Browns</td></tr>
+          </table>
+
+        <table>
+            <tr><th>Name</th><td>Colleen</td></tr>
+            <tr><th>Age</th><td>26</td></tr>
+            <tr><th>Team</th><td>Browns</td></tr>
+          </table>
+    </body>
+
+</html>
